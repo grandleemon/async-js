@@ -51,7 +51,7 @@ fetch('https://jsonplaceholder.typicode.com/post')
 // you should pass a callback to it, and arguments to that callback
 
 const asyncFunc = async (args) => {
-    const res = await args.map(item => fetch(`https://jsonplaceholder.typicode.com/post/${item}`))
+    const res = await args.map(item => fetch(`https://jsonplaceholder.typicode.com/posts/${item}`))
     return await Promise.all(res)
 }
 
